@@ -11,7 +11,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="questionlb" text="How many categories?" />
+    <Label fx:id="questionlb" text="How many categories??" />
     <TextField fx:id="questiontxt" promptText="Number between 5-8" />
     <Button fx:id="submitButton" onAction="#submitButtonClick" text="Submit" />
 </VBox>
