@@ -1,8 +1,8 @@
-module com.example.jeopardy {
+module com.example.jeopardyapp {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.jeopardy to javafx.fxml;
-    exports com.example.jeopardy;
+    opens com.example.jeopardyapp to javafx.fxml;
+    exports com.example.jeopardyapp;
 }

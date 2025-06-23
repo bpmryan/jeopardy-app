@@ -1,4 +1,4 @@
-package com.example.jeopardy;
+package com.example.jeopardyapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class QuestionApp extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(QuestionApp.class.getResource("questionPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Question");
+        stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
     }
@@ -20,6 +20,4 @@ public class QuestionApp extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-    //have an if-else statement to direct user to another screen based on the number of categories inputed in questiontxt
 }
