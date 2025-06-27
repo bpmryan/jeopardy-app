@@ -12,7 +12,7 @@ public class QuestionApp extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(QuestionApp.class.getResource("questionPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("Question");
         stage.setScene(scene);
         stage.show();
     }
