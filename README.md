@@ -27,20 +27,22 @@ Jeopardy Coding Project Ideas
                 - [ ] 
 
 
-- [ ] Question screen 
-    - [ ] 2 slides
+- [ ] Question and Answer templates 
+    - [ ] 2 slides (now templates)
         - [ ] Question
         - [ ] Answer 
         - [ ] Use 2 tags
             - [ ] Apparently can be used to for each button 
     - [ ] should have a link back to the question board
     - [ ] Should have the answer pop up after team answers it correctly or dead question
-        - [ ] Button to move to answer 
-        - [ ] Return button if misclicked 
+        - [ ] Button to move to answer
+            - [ ] should be linked to the answer template
+        - [ ] Return button if misclicked
+            - [ ] should be linked to the question board
     - [ ] Add questions (txt), color background, color of the text, and pictures
         - [ ] Color background and text should be the same for each category
         - [ ] There should be an option for the user to change the color for both of them
-        - [ ] User should be able to edit those 3 things 
+        - [ ] User should be able to edit those 3 things
 
 
 - [ ] Question board
