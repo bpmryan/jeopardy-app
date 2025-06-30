@@ -22,9 +22,12 @@ public class QuestionController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
+    //Opens the final jeopardy question
     public void finalJeopardyButtonClick(ActionEvent actionEvent) {
     }
 
+
+    //opens the Question Board scene
     public void submitButtonClick(javafx.event.ActionEvent ActionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(QuestionApp.class.getResource("fiveCategories.fxml"));
         stage = (Stage)((Node)ActionEvent.getSource()).getScene().getWindow();
