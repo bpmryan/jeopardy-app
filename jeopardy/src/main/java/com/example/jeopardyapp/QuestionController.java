@@ -26,7 +26,7 @@ public class QuestionController {
     }
 
     public void submitButtonClick(javafx.event.ActionEvent ActionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(QuestionApp.class.getResource("questionPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(QuestionApp.class.getResource("fiveCategories.fxml"));
         stage = (Stage)((Node)ActionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Question Grid");
