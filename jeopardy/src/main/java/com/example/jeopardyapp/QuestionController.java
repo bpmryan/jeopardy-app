@@ -32,6 +32,5 @@ public class QuestionController {
         stage.setTitle("Question Grid");
         stage.setScene(scene);
         stage.show();
-  //
     }
 }
