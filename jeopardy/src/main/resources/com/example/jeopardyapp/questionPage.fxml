@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.DropdownButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
@@ -14,16 +14,25 @@
     </padding>
 
     <Label fx:id="questionlb" text="How many categories?" />
-   <HBox prefHeight="0.0" prefWidth="130.0">
-      <children>
-         <RadioButton mnemonicParsing="false" text="5" />
-         <SplitPane prefHeight="100.0" prefWidth="14.0" />
-         <RadioButton mnemonicParsing="false" text="6" />
-         <SplitPane layoutX="41.0" layoutY="10.0" prefHeight="100.0" prefWidth="14.0" />
-         <RadioButton mnemonicParsing="false" text="7" />
-         <SplitPane layoutX="41.0" layoutY="10.0" prefHeight="100.0" prefWidth="14.0" />
-         <RadioButton mnemonicParsing="false" text="8" />
-      </children>
-   </HBox>
+   <DropdownButton>
+       <items>
+           <MenuItem text="Select a number" />
+           <MenuItem text="5" />
+           <MenuItem text="6" />
+           <MenuItem text="7" />
+           <MenuItem text="8" />
+       </items>
+   </DropdownButton>
+   <HBox prefHeight="0.0" prefWidth="130.0" />
+   <Label text="How many questions per category?" />
+   <DropdownButton layoutX="82.0" layoutY="67.0">
+      <items>
+         <MenuItem text="Select a number" />
+         <MenuItem text="5" />
+         <MenuItem text="6" />
+         <MenuItem text="7" />
+         <MenuItem text="8" />
+      </items>
+   </DropdownButton>
     <Button fx:id="submitButton" onAction="#submitButtonClick" text="Submit" />
 </VBox>
