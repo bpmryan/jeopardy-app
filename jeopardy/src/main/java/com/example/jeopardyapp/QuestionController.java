@@ -113,7 +113,7 @@ public class QuestionController {
 
     private void openQuestionWindow(String categoryName, int pointValue, Stage owner) {
         try {
-            FXMLLoader loader = new FXMLLoader(QuestionApp.class.getResource("questionTemplate.fxml"));
+            FXMLLoader loader = new FXMLLoader(FirstPage.class.getResource("questionTemplate.fxml"));
             javafx.scene.Parent root = loader.load();
             QuestionTemplate controller = loader.getController();
             Stage questionStage = new Stage();
@@ -143,6 +143,6 @@ public class QuestionController {
         openDynamicBoardWindow(categories, questionsPerCategory);
 
         // Optionally keep the original window open; if you want to switch windows instead, uncomment below:
-        // ((Stage) ((Node) ActionEvent.getSource()).getScene().getWindow()).close();
+         ((Stage) ((Node) ActionEvent.getSource()).getScene().getWindow()).close();
     }
 }
