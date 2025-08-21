@@ -52,6 +52,7 @@ public class QuestionTemplate {
         this.stage = stage;
     }
 
+    // Method to close window 
     private void closeWindow() {
         if (stage == null) {
             // fallback: try to get stage from any button
@@ -66,10 +67,10 @@ public class QuestionTemplate {
 
     private void openAnswerWindow() {
         try {
-            FXMLLoader loader = new FXMLLoader(QuestionApp.class.getResource("answerTemplate.fxml"));
+            FXMLLoader loader = new FXMLLoader(FirstPage.class.getResource("answerTemplate.fxml")); //pulls up the answerTemplate in a new window
             Parent root = loader.load();
             AnswerTemplate controller = loader.getController();
-            controller.setCategoryAndValue(category, pointValue);
+            controller.setCategoryAndValue(category, pointValue); //fills in the question value and category
 
             Stage answerStage = new Stage();
             controller.setStage(answerStage);
